@@ -1,9 +1,9 @@
 ---
 tags:
-  - task
+  - moc
 ---
 ## All tasks
-```tasks
-not done
-tags include #task
+```dataview
+TASK
+FROM #task 
 ```

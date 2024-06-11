@@ -1,14 +1,27 @@
 ---
 tags:
   - meeting
-  - question
+  - moc
 ---
 ## General
 - [ ] Schuman hostel reiumbursement
 - [ ] Still no stipend
 
-## Analysis
-```tasks
-not done
-tags include #analysis
+## All questions
+```dataview
+TASK
+FROM #question AND !#mcnet 
 ```
+## Analysis
+```dataview
+TASK
+FROM #analysis 
+```
+
+## MCNet
+```dataview
+TASK
+FROM #mcnet 
+```
+
+
