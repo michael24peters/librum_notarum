@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"2ad8441974fb1d25","type":"text","text":"\n# Analysis topics\n\n## General\n\n```dataview\nLIST\nFROM #analysis and (\"01 Fleeting\" or \"02 Literature\" or \"03 Permanent\")\n```\n\n## Tasks\n\n```dataview\nTASK\nWHERE !completed and contains(tags, \"#task/analysis\")\nGROUP BY file.link\nSORT rows.file.ctime ASC\n```\n\n```dataview\nLIST\nFROM #task/analysis and (\"01 Fleeting\" or \"03 Permanent\")\n```\n\n## Questions\n\n```dataview\nTASK\nWHERE !completed and contains(tags, \"#question/analysis\")\nGROUP BY file.link\nSORT rows.file.ctime ASC\n```\n\n```dataview\nLIST\nFROM #question/analysis and (\"01 Fleeting\" or \"03 Permanent\")\n```\n","x":-800,"y":-520,"width":580,"height":1020},
+		{"id":"21fbb216e78af4e3","type":"file","file":"09 Dataview/Codex topics.md","x":-1420,"y":-520,"width":580,"height":1020},
+		{"id":"a3741dfa3e084bb2","type":"text","text":"\n## Discussion topics\n\n- [ ] How do I get started with Linux? Any recommended... family/distros/whatever combos?\n\n\n```dataview\nTASK\nWHERE !completed and contains(tags, \"#discuss\")\nGROUP BY file.link\nSORT rows.file.ctime ASC\n```\n\n```dataview\nLIST\nFROM #discuss and (\"01 Fleeting\" or \"03 Permanent\")\n```\n\n## Questions\n```dataview\nTASK\nFROM #question\nWHERE !completed and contains(tags, \"#question\")\nGROUP BY file.link\nSORT rows.file.ctime ASC\n```\n\n```dataview\nLIST\nFROM #question and (\"01 Fleeting\" or \"03 Permanent\")\n```","x":-180,"y":-520,"width":580,"height":1020}
+	],
+	"edges":[]
+}
